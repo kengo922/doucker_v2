@@ -4,11 +4,7 @@
       <h3>
         投稿する
       </h3>
-      <%= form.label :image %>
-      <%= form.file_field :image %>
-      <%= form.hidden_field :image_cache  %>
-      <%= form.text_area :text, placeholder: "text" , rows: "10" %>
-      <%= form.submit "SEND" %>
+        <%= render partial: "form", locals: { form: form } %>
     <% end %>
   </div>
 </div>
